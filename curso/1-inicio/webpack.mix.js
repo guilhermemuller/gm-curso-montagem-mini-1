@@ -17,6 +17,7 @@ mix.sass('src/sass/estilos.scss', 'dist/css')
    		processCssUrls: false
    })
    .browserSync({
+      watch: true,
 		server: {
 	    	baseDir: "./"
 		},
