@@ -1,0 +1,23 @@
+.site-menu {
+
+	margin-top: 3.5em;
+
+	ul {
+		display: flex;
+
+		> * + * {
+			margin-left: 3em;
+		}
+
+		> li:nth-child(3) {
+			margin-left: 15em;
+		}
+	}
+
+	a {
+		text-transform: uppercase;
+		font-weight: 700;
+		text-decoration: none;
+		letter-spacing: 0.2em;
+	}
+}
