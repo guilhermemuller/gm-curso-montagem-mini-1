@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap);*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: Quicksand, sans-serif;
+  font-size: 100%;
+  background: white;
+  color: black;
+}
+
+.logo {
+  position: absolute;
+  top: 3.5em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.site-menu {
+  margin-top: 3.5em;
+}
+.site-menu ul {
+  display: flex;
+}
+.site-menu ul > * + * {
+  margin-left: 3em;
+}
+.site-menu ul > li:nth-child(3) {
+  margin-left: 15em;
+}
+.site-menu a {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+}
+
+.botao {
+  display: inline-block;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  background: #16a085;
+  padding: 1em 2em;
+  border-radius: 0.4em;
+}
+
+.secao-capa {
+  min-height: 100vh;
+  background: url("../imagens/fundo-capa.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+.secao-capa a {
+  color: inherit;
+}
+.secao-capa > .chamada-principal {
+  text-align: center;
+  font-size: 130%;
+}
+.secao-capa > .chamada-principal > h1 {
+  font-size: 2.25em;
+  text-transform: uppercase;
+}
+.secao-capa > .chamada-principal > p {
+  margin-bottom: 1.5rem;
+}
+
+.links-sociais {
+  display: flex;
+  font-size: 1.75em;
+  margin-bottom: 1em;
+}
+.links-sociais > * + * {
+  margin-left: 1em;
+}
+
+.secao-represente h2,
+.secao-design h2 {
+  color: #16a085;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.125em;
+}
+.secao-represente p,
+.secao-design p {
+  font-size: 0.8125em;
+  line-height: 1.5;
+}
+.secao-represente .botao,
+.secao-design .botao {
+  font-size: 0.75em;
+}
+.secao-represente-conteudo,
+.secao-design-conteudo {
+  max-width: 55%;
+  /*
+  > *:not(:last-child) {
+  	margin-bottom: 1.5rem;
+  }
+  */
+}
+.secao-represente-conteudo > * + *,
+.secao-design-conteudo > * + * {
+  margin-top: 1.5rem;
+}
+.secao-represente > .largura-conteudo,
+.secao-design > .largura-conteudo {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5em 2em;
+}
+
+.secao-represente {
+  background: #f5f6f7;
+}
+.secao-represente > .largura-conteudo {
+  background: url("../imagens/mao-iphone.png") no-repeat right bottom/50% auto;
+}
+
+.secao-design > .largura-conteudo {
+  align-items: flex-end;
+  background: url("../imagens/iphone.png") no-repeat left 5em/35% auto;
+}
+.secao-design-conteudo {
+  width: 45%;
+}
+
+.largura-conteudo {
+  max-width: 60em;
+  margin: 0 auto;
+}
