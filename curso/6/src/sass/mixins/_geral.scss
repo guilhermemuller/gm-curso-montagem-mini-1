@@ -1,0 +1,7 @@
+@function em($tamanho, $base: 16) {
+	@return ($tamanho / $base) * 1em;
+}
+
+@function rem($tamanho, $base: 16) {
+	@return ($tamanho / $base) * 1rem;
+}

@@ -1,0 +1,44 @@
+.secao-comunidade {
+	background: #f5f6f7;
+	padding: 7em 0;
+}
+
+.secao-comunidade-conteudo {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+
+	> div {
+		max-width: 37%;
+	}
+
+	> div:first-child {
+		max-width: 21%;
+		text-align: center;
+
+		> * + * {
+			margin-top: 1em;
+		}
+
+		> header {
+
+			> h2 {
+				font-weight: bold;
+				font-size: em(16);
+				text-transform: uppercase;
+				color: #373737;
+				letter-spacing: 0.15em;
+			}
+
+			> * + * {
+				margin-top: 1em;
+			}
+		}
+
+		> p {
+			color: #373737;
+			font-size: em(12);
+		}
+	}
+}
