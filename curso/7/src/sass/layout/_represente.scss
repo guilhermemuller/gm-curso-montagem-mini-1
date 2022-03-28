@@ -1,0 +1,50 @@
+.secao-represente,
+.secao-design
+{
+
+	h2 {
+		color: $cor-verde;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		font-size: em(18);
+	}
+
+	p {
+		font-size: em(13);
+		line-height: 1.5;
+	}
+
+	.botao {
+		font-size: em(12);
+	}
+
+	&-conteudo {
+		max-width: 55%;
+
+		/*
+		> *:not(:last-child) {
+			margin-bottom: 1.5rem;
+		}
+		*/
+
+		> * + * {
+			margin-top: 1.5rem;
+		}
+	}
+
+	> .largura-conteudo {
+		min-height: 50vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 5em 2em;
+	}
+}
+
+.secao-represente {
+	background: #f5f6f7;
+
+	> .largura-conteudo {
+		background: url('../imagens/mao-iphone.png') no-repeat right bottom / 50% auto;
+	}
+}

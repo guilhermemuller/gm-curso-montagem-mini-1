@@ -1,0 +1,40 @@
+.secao-capa {
+	min-height: 100vh;
+	background: url('../imagens/fundo-capa.jpg') no-repeat center center / cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	position: relative;
+
+	a {
+		color: inherit;
+	}
+
+	> .chamada-principal {
+
+		text-align: center;
+		font-size: 130%;
+
+		> h1 {
+			font-size: em(36);
+			text-transform: uppercase;
+		}
+
+		> p {
+			margin-bottom: 1.5rem;
+		}
+
+	}
+}
+
+.links-sociais {
+	display: flex;
+	font-size: 1.75em;
+	margin-bottom: 1em;
+
+	> * + * {
+		margin-left: 1em;	
+	}
+}

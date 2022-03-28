@@ -1,0 +1,11 @@
+.botao {
+	display: inline-block;
+	font-size: em(12);
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	background: $cor-verde;
+	padding: 1em 2em;
+	border-radius: 0.4em;
+}

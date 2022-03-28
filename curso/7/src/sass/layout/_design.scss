@@ -1,0 +1,12 @@
+.secao-design {
+
+	> .largura-conteudo {
+		align-items: flex-end;
+		background: url("../imagens/iphone.png") no-repeat left 5em/35% auto;
+	}
+
+	&-conteudo {
+		width: 45%;
+	}
+
+}
