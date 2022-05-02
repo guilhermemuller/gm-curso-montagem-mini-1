@@ -17,3 +17,11 @@ embed
 	max-width: 100%;
 	vertical-align: middle;
 }
+
+input,
+select,
+textarea,
+button {
+	font-size: inherit;
+	font-family: inherit;
+}

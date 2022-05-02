@@ -1,0 +1,60 @@
+.secao-newsletter {
+	height: 100vh;
+	background: black url('../imagens/fundo-newsletter.jpg') no-repeat center center / cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&-conteudo {
+		text-align: center;
+
+		h2 {
+			font-weight: bold;
+			font-size: em(24);
+			text-transform: uppercase;
+			color: white;
+			letter-spacing: 0.15em;
+			margin-bottom: 0.5em;
+		}
+	}
+
+	&-form {
+		display: flex;
+		justify-content: center;
+
+		> label,
+		> button > span
+		{
+			position: absolute;
+			left: -999em;
+		}
+
+		> input {
+			padding: 1em 1em;
+			color: #373737;
+			font-size: em(16);
+			text-transform: uppercase;
+			font-weight: bold;
+			letter-spacing: 0.15em;
+			border: 0;
+			border-radius: 0.1em 0 0 0.1em;
+		}
+
+		> button {
+			background: $cor-verde;
+			color: white;
+			border: 0;
+			padding: 0 0.85em;
+			border-radius: 0 0.1em 0.1em 0;
+			font-size: em(20);
+			cursor: pointer;
+			transition: background 0.2s ease;
+
+			&:hover {
+				background: lighten($cor-verde, 15%);
+			}
+		}
+
+	}
+}

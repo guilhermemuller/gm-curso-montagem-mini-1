@@ -8366,6 +8366,14 @@ embed {
   vertical-align: middle;
 }
 
+input,
+select,
+textarea,
+button {
+  font-size: inherit;
+  font-family: inherit;
+}
+
 body {
   font-family: Quicksand, sans-serif;
   font-size: 100%;
@@ -8532,6 +8540,58 @@ body {
 .secao-comunidade-conteudo > div:first-child > p {
   color: #373737;
   font-size: 0.75em;
+}
+
+.secao-newsletter {
+  height: 100vh;
+  background: black url("../imagens/fundo-newsletter.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.secao-newsletter-conteudo {
+  text-align: center;
+}
+.secao-newsletter-conteudo h2 {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+}
+.secao-newsletter-form {
+  display: flex;
+  justify-content: center;
+}
+.secao-newsletter-form > label,
+.secao-newsletter-form > button > span {
+  position: absolute;
+  left: -999em;
+}
+.secao-newsletter-form > input {
+  padding: 1em 1em;
+  color: #373737;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  border: 0;
+  border-radius: 0.1em 0 0 0.1em;
+}
+.secao-newsletter-form > button {
+  background: #16a085;
+  color: white;
+  border: 0;
+  padding: 0 0.85em;
+  border-radius: 0 0.1em 0.1em 0;
+  font-size: 1.25em;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.secao-newsletter-form > button:hover {
+  background: #22e1bb;
 }
 
 .largura-conteudo {
